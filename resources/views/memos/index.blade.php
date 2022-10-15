@@ -7,7 +7,6 @@
     <title>memo index</title>
 </head>
 <body>
-<a href="/memo">戻る</a>
     <h1>タイトル一覧</h1>
     <ul>
         @foreach ($memos as $memo)
@@ -15,5 +14,6 @@
             <li><a href="/memos/{{ $memo->id }}">{{ $memo->title }}</a></li>
         @endforeach
     </ul>
+    <button onclick="location.href='/memos/create'">登録する</button>
 </body>
-</html> 
+</html>
